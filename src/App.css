@@ -1,0 +1,19 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.item {
+  transition: 0.5s ease, height 0.5s ease;
+  height: 202px;
+  margin-bottom: 20px;
+}
+
+.item.fade-out {
+  margin-bottom: 0;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
