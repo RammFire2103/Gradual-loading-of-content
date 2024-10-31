@@ -1,6 +1,6 @@
 import { useAppDispatch } from "../app/store";
 import { Card, Avatar, Typography } from "antd";
-import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
+import { DeleteOutlined } from "@ant-design/icons";
 
 const { Link } = Typography;
 
@@ -25,7 +25,6 @@ const ListItem = ({ item }: { item: Item }) => {
   };
 
   const actions: React.ReactNode[] = [
-    <EditOutlined key="edit" />,
     <DeleteOutlined onClick={() => deleteItem(item.id)} key="setting" />,
   ];
 
